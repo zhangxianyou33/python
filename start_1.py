@@ -101,5 +101,11 @@ def lei_xing():
     ord()`：将字符串（一个字符）转换成对应的编码（整数
     """
 
+    #闰年判断
+    year = int(input("请输入年份："))
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print(f"{year}是闰年")
+
 def yunsuanfu():
     pass
+
